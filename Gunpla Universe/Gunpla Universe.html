@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunpla Universe - Toko Model Kit Gundam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="admin.html" style="float: right; color: white; text-decoration: none; padding: 10px 20px; background-color: rgba(255,69,0,0.7); border-radius: 5px; margin-top: 10px;">🔐 Admin Panel</a>
+        </div>
+    </header>
+    <div class="logo" style="margin-top: 40px;">
+        <img src="images/banner.png" alt="Logo">
+        <h1>Gunpla Universe</h1>
+    </div>
+    <!-- Cart Icon -->
+    <div class="cart-header">
+        <button class="cart-btn" onclick="toggleCart()">
+            🛒 Keranjang <span class="cart-count" id="cart-count">0</span>
+        </button>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="join-community">
+            <h2>Bergabunglah dengan komunitas penggemar Gunpla di Gunpla Universe!</h2>
+            <p>Temukan berbagai model Gundam yang menarik dan berkualitas tinggi untuk menambah koleksi Anda. Dapatkan pengalaman berbelanja yang menyenangkan dan layanan pelanggan yang ramah bersama kami.</p>
+            <a class="buy-now-btn" href="#products">Lihat Produk</a>
+        </div>
+        <!-- FLASH SALE BANNER -->
+        <section id="flash-sale" class="flash-sale">
+            <div style="text-align: center;">
+                <h2>⚡ FLASH SALE HARI INI ⚡</h2>
+                <p style="font-size: 1.2rem; color: #fff;">Diskon hingga <strong>50%</strong> untuk produk pilihan!</p>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span id="countdown-hours">00</span>
+                        <p>Jam</p>
+                    </div>
+                    <span style="font-size: 2rem; color: white;">:</span>
+                    <div class="countdown-item">
+                        <span id="countdown-minutes">00</span>
+                        <p>Menit</p>
+                    </div>
+                    <span style="font-size: 2rem; color: white;">:</span>
+                    <div class="countdown-item">
+                        <span id="countdown-seconds">00</span>
+                        <p>Detik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h2>Kata Siapa Belanja Model Kit Gundam Bikin Kantong Jebol? Di Gundam Universe Kamu Bisa Dapetin Gundam Model Kit Kesayangan Dengan Harga Merakyat!</h2>
+                </div>
+            <div class="promo-content">
+                <div class="promo-image">
+                    <img src="images/promo.png" alt="Promo Image">
+                </div>
+                <div class="promo-text">
+                    <h2>Cari Model Kit Reguler? Atau Sedang Berburu Edisi Terbatas? Ada Disini!</h2>
+                    <p>Fokus menjual aneka model kit Gundam dengan cakupan pasar tidak hanya di Indonesia, tapi juga luar negeri. Koleksi lengkap dengan harga bersahabat menjadi nilai jual utama kami.</p>
+                    <p>Untuk membantu kamu dalam merakit, kami juga menjual berbagai komponen pendukung seperti tang potong, pen-type cutter, polisher, kompresor airbrush, dan berbagai cat.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="margin-top: 200px;">
+    <h2>Tentang Kami</h2>
+    <p>Selamat datang di Gunpla Universe! Kami adalah toko yang mengkhususkan diri dalam menjual model plastik Gundam (Gunpla). Kami menawarkan berbagai macam kit Gunpla dari berbagai seri Gundam. Kami berdedikasi untuk memberikan produk terbaik dan layanan pelanggan yang memuaskan.</p>
+    <p>Gunpla Universe didirikan oleh para penggemar Gundam yang memiliki hasrat besar terhadap model plastik. Kami memahami kebutuhan dan keinginan para kolektor dan penggemar karena kami juga bagian dari komunitas ini. Setiap produk yang kami tawarkan dipilih dengan hati-hati untuk memastikan kualitas dan keasliannya.</p>
+    <p>Kami percaya bahwa membangun model Gunpla bukan hanya sekedar hobi, tetapi juga bentuk seni dan ekspresi diri. Melalui Gunpla Universe, kami ingin membantu para penggemar menemukan kit yang sempurna untuk proyek mereka berikutnya, serta memberikan tips dan trik untuk membantu mereka mencapai hasil terbaik.</p>
+    </section>
+        <section id="Koleksi" style="margin-top: 200px;">
+            <h2>Koleksi Model Kit</h2>
+            <div class="Koleksi-container">
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 1.jpg" alt="Koleksi 1">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 2.jpg" alt="Koleksi 2">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 3.jpeg" alt="Koleksi 3">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 4.jpg" alt="Koleksi 4">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 5.jpg" alt="Koleksi 5">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 6.jpg" alt="Koleksi 6">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 7.jpg" alt="Koleksi 7">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 8.jpg" alt="Koleksi 8">
+                </div>
+                <div class="Koleksi-item">
+                    <img src="images/koleksi 9.jpg" alt="Koleksi 9">
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Katalog Produk</h2>
+            
+            <!-- SEARCH & FILTER BAR -->
+            <div class="products-controls">
+                <div class="search-bar">
+                    <input type="text" id="product-search" placeholder="🔍 Cari produk..." onkeyup="filterProducts()">
+                </div>
+                <div class="filter-controls">
+                    <select id="category-filter" onchange="filterProducts()">
+                        <option value="">📁 Semua Kategori</option>
+                        <option value="RG">RG (Real Grade)</option>
+                        <option value="MG">MG (Master Grade)</option>
+                        <option value="MGEX">MGEX (Master Grade Extreme)</option>
+                    </select>
+                    <select id="price-filter" onchange="filterProducts()">
+                        <option value="">💰 Semua Harga</option>
+                        <option value="0-500000">Rp 0 - 500rb</option>
+                        <option value="500000-1000000">Rp 500rb - 1jt</option>
+                        <option value="1000000-2000000">Rp 1jt - 2jt</option>
+                        <option value="2000000">Rp 2jt+</option>
+                    </select>
+                    <select id="rating-filter" onchange="filterProducts()">
+                        <option value="">⭐ Semua Rating</option>
+                        <option value="5">5 Bintang</option>
+                        <option value="4">4+ Bintang</option>
+                        <option value="3">3+ Bintang</option>
+                    </select>
+                    <button onclick="showComparison()" class="comparison-btn">📊 Bandingkan</button>
+                </div>
+            </div>
+            
+            <div class="product-table" id="products-container">
+                <div class="product-item" onclick="zoomImage('images/produk 1.jpg')">
+                <img src="images/produk 1.jpg" alt="RG 1/144 Gundam RX-78-Gp01Fb Full Burnern">
+                <h3>RG 1/144 Gundam RX-78-Gp01Fb Full Burnern</h3>
+                <p><strong>Model:</strong> RG (Real Grade) 1/144</p>
+                <p><strong>Nama:</strong> Gundam RX-78-Gp01Fb Full Burnern</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Detail luar biasa dengan bagian eksterior yang presisi dan mekanisme internal yang kompleks.</li>
+                    <li>Memiliki fitur transformasi untuk mode "Full Burnern".</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesoris, termasuk beam rifle, shield, dan beam saber.</li>
+                </ul>
+                <button class="add-to-cart-btn" onclick="addToCart('RG 1/144 Gundam RX-78-Gp01Fb Full Burnern', 450000); event.stopPropagation();">➕ Keranjang</button>
+                <a href="https://wa.me/628+++++++++++?text=Saya%20tertarik%20dengan%20produk%20RG%201/144%20Gundam%20RX-78-Gp01Fb%20Full%20Burnern" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-item" onclick="zoomImage('images/produk 2.jpg')">
+                <img src="images/produk 2.jpg" alt="MG 1/100 RX-78-2 Gundam Ver.Ka">
+                <h3>MG 1/100 RX-78-2 Gundam Ver.Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> RX-78-2 Gundam Ver.Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Desain oleh Katoki Hajime dengan detail yang luar biasa.</li>
+                    <li>Struktur internal yang kuat dan stabil untuk berbagai pose.</li>
+                    <li>Dilengkapi dengan berbagai aksesoris dan senjata, termasuk beam rifle, shield, dan saber.</li>
+                    <li>Sticker decals untuk detail tambahan.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp650.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20RX-78-2%20Gundam%20Ver.Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-item" onclick="zoomImage('images/produk 3.jpg')">
+                <img src="images/produk 3.jpg" alt="MG 1/100 Unicorn Gundam Ver.Ka">
+                <h3>MG 1/100 Unicorn Gundam Ver.Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> Unicorn Gundam Ver.Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Fitur transformasi antara mode Unicorn dan mode Destroy.</li>
+                    <li>Detail yang sangat baik dengan desain oleh Hajime Katoki.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk beam magnum, shield, dan beam sabers.</li>
+                    <li>Artikulasi tinggi untuk berbagai pose dinamis.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp925.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20Unicorn%20Gundam%20Ver.Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-item" onclick="zoomImage('images/produk 4.jpg')">
+                <img src="images/produk 4.jpg" alt="MG 1/100 Sazabi Ver.Ka">
+                <h3>MG 1/100 Sazabi Ver.Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> Sazabi Ver.Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Desain karya Hajime Katoki dengan detail yang luar biasa.</li>
+                    <li>Fitur artikulasi tinggi dan struktur internal yang kuat.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk beam shot rifle, shield, dan beam tomahawk.</li>
+                    <li>Sticker decals untuk detail tambahan.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp1.549.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20Sazabi%20Ver.Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-item" onclick="zoomImage('images/produk 5.jpg')">
+                <img src="images/produk 5.jpg" alt="MG 1/100 Wing Gundam Zero EW Ver.Ka">
+                <h3>MG 1/100 Wing Gundam Zero EW Ver.Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> Wing Gundam Zero EW Ver.Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Desain oleh Hajime Katoki dengan aksen serat dan desain yang khas.</li>
+                    <li>Fitur transformasi antara mode Bird dan mode MS.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk twin buster rifle, shield, dan beam sabers.</li>
+                    <li>Sticker decals untuk detail tambahan.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp1.529.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20Wing%20Gundam%20Zero%20EW%20Ver.Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-item" onclick="zoomImage('images/produk 6.jpg')">
+                <img src="images/produk 6.jpg" alt="RG 1/144 Zeta Gundam">
+                <h3>RG 1/144 Zeta Gundam</h3>
+                <p><strong>Model:</strong> RG (Real Grade) 1/144</p>
+                <p><strong>Nama:</strong> Zeta Gundam</p>
+                <ul>
+                    <li>Detail yang sangat presisi dengan teknologi RG.</li>
+                    <li>Fitur transformasi antara mode MS dan mode Wave Rider.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk beam rifle, shield, dan beam sabers.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp619.000 </p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20RG%201/144%20Zeta%20Gundam" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-item" onclick="zoomImage('images/produk 7.jpg')">
+                <img src="images/produk 7.jpg" alt="MGEX Strike Freedom Gundam">
+                <h3>MGEX Strike Freedom Gundam</h3>
+                <p><strong>Model:</strong> MGEX (Master Grade Extreme) 1/100</p>
+                <p><strong>Nama:</strong> Strike Freedom Gundam</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Desain yang mewah dan detail yang tinggi.</li>
+                    <li>Fitur sistem lighting untuk efek visual yang menakjubkan.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk beam rifles, rail cannons, dan beam sabers.</li>
+                    <li>Sticker decals untuk detail tambahan.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp3.898.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MGEX%20Strike%20Freedom%20Gundam" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>                        
+            <div class="product-item" onclick="zoomImage('images/produk 8.jpg')">
+                <img src="images/produk 8.jpg" alt="MG 1/100 Nu Gundam Ver. Ka">
+                <h3>MG 1/100 Nu Gundam Ver. Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> Nu Gundam Ver. Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Desain yang dirancang oleh Katoki Hajime dengan detail yang tinggi.</li>
+                    <li>Fitur struktur internal yang kuat untuk berbagai pose dinamis.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk beam rifle, shield, dan beam sabers.</li>
+                    <li>Sticker decals untuk detail tambahan.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp1.198.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20Nu%20Gundam%20Ver.%20Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>            
+            <div class="product-item" onclick="zoomImage('images/produk 9.jpg')">
+                <img src="images/produk 9.jpg" alt="MG 1/100 Unicorn Gundam Banshee Ver.Ka">
+                <h3>MG 1/100 Unicorn Gundam Banshee Ver.Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> Unicorn Gundam Banshee Ver.Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Fitur transformasi antara mode Unicorn dan mode Destroy.</li>
+                    <li>Desain yang sangat detail oleh Hajime Katoki.</li>
+                    <li>Dilengkapi dengan berbagai senjata dan aksesori, termasuk beam magnum, shield, dan beam sabers.</li>
+                    <li>Artikulasi tinggi untuk berbagai pose dinamis.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp969.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20Unicorn%20Gundam%20Banshee%20Ver.Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>            
+            <div class="product-item" onclick="zoomImage('images/produk 10.jpg')">
+                <img src="images/produk 10.jpg" alt="MG 1/100 Narrative Gundam C-Packs Ver.Ka">
+                <h3>MG 1/100 Narrative Gundam C-Packs Ver.Ka</h3>
+                <p><strong>Model:</strong> MG (Master Grade) 1/100</p>
+                <p><strong>Nama:</strong> Narrative Gundam C-Packs Ver.Ka</p>
+                <p><strong>Detail:</strong></p>
+                <ul>
+                    <li>Desain oleh Hajime Katoki dengan detail yang luar biasa.</li>
+                    <li>Variasi dari Narrative Gundam dengan konfigurasi C-Packs yang khas.</li>
+                    <li>Dilengkapi dengan senjata-senjata khusus dan aksesori untuk versi C-Packs.</li>
+                    <li>Artikulasi tinggi untuk pose-pose dinamis.</li>
+                    <li>Inklusi efek khusus untuk memperkuat adegan dari seri Gundam Narrative.</li>
+                </ul>
+                <p><strong>Harga:</strong> Rp1.450.000</p>
+                <a href="https://wa.me/628++++++++++?text=Saya%20tertarik%20dengan%20produk%20MG%201/100%20Narrative%20Gundam%20C-Packs%20Ver.Ka" class="buy-now-btn">Pesan via WhatsApp</a>
+            </div>
+        </section>
+        <div id="zoom-container" class="zoom-container" onclick="closeZoom()">
+            <img id="zoom-image" class="zoom-image" src="" alt="Zoomed Image">
+        </div>
+
+        <!-- BLOG SECTION -->
+        <section id="blog" class="blog-section" style="margin-top: 250px;">
+            <h2>📚 Tips & Tutorial Gunpla</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Baca artikel menarik tentang Gunpla dan cara merawat koleksi Anda</p>
+            <div class="blog-container">
+                <article class="blog-card">
+                    <div class="blog-image">📖</div>
+                    <h3>Panduan Merakit Gunpla untuk Pemula</h3>
+                    <p>Langkah demi langkah cara merakit model kit Gundam dengan sempurna. Pelajari teknik dasar, tools yang dibutuhkan, dan tips agar hasil merakit bagus.</p>
+                    <a href="#" class="read-more-btn">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">🛠️</div>
+                    <h3>Tools Esensial untuk Gunpla Builder</h3>
+                    <p>Rekomendasi tools terbaik untuk merakit Gunpla. Dari cutting tools, sanding, polishing, hingga painting. Investasi yang tepat untuk hasil maksimal.</p>
+                    <a href="#" class="read-more-btn">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">🎨</div>
+                    <h3>Teknik Painting untuk Gunpla Professional</h3>
+                    <p>Cara melakukan custom painting pada model Gundam. Mulai dari spray painting, hand painting, hingga weathering untuk efek yang lebih realistis.</p>
+                    <a href="#" class="read-more-btn">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">✨</div>
+                    <h3>Cara Merawat Koleksi Gunpla Anda</h3>
+                    <p>Tips perawatan dan penyimpanan model kit agar tetap awet dan terhindar dari debu. Teknik display yang menarik untuk memamerkan koleksi Anda.</p>
+                    <a href="#" class="read-more-btn">Baca Selengkapnya →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- COMPARISON MODAL -->
+        <div id="comparison-modal" class="modal" style="display: none;">
+            <div class="modal-content" style="width: 90%; max-width: 900px;">
+                <span class="close-modal" onclick="closeComparison()">&times;</span>
+                <h2>📊 Bandingkan Produk</h2>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 10px;">Pilih produk untuk dibandingkan (maksimal 3):</label>
+                    <div id="comparison-checkboxes" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;"></div>
+                </div>
+                <button onclick="renderComparison()" class="btn" style="margin-bottom: 20px;">Bandingkan</button>
+                <div id="comparison-result"></div>
+            </div>
+        </div>
+        <!-- NEWSLETTER SECTION -->
+        <section id="newsletter" class="newsletter-section" style="margin-top: 250px;">
+            <div class="newsletter-content">
+                <h2>📧 Subscribe Newsletter</h2>
+                <p>Dapatkan promo eksklusif, tips Gunpla, dan update produk terbaru langsung ke inbox Anda!</p>
+                <form onsubmit="subscribeNewsletter(event)" style="display: flex; gap: 10px; margin-top: 20px;">
+                    <input type="email" id="newsletter-email" placeholder="Masukkan email Anda..." required style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    <button type="submit" class="btn">✉️ Subscribe</button>
+                </form>
+                <p style="font-size: 0.9rem; color: #999; margin-top: 10px;">Kami tidak akan spam. Unsubscribe kapan saja.</p>
+            </div>
+        </section>
+
+        <!-- MOBILE APP PROMO -->
+        <section class="mobile-app-section" style="margin-top: 250px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; border-radius: 10px; color: white; text-align: center;">
+            <h2>📱 Download Aplikasi Mobile</h2>
+            <p style="margin-bottom: 30px;">Belanja lebih mudah dengan aplikasi Gunpla Universe!</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#" style="background-color: rgba(255,255,255,0.2); padding: 12px 25px; border-radius: 5px; color: white; text-decoration: none; border: 2px solid white; transition: all 0.3s;">
+                    🍎 App Store
+                </a>
+                <a href="#" style="background-color: rgba(255,255,255,0.2); padding: 12px 25px; border-radius: 5px; color: white; text-decoration: none; border: 2px solid white; transition: all 0.3s;">
+                    🤖 Google Play
+                </a>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials" style="margin-top: 250px;">
+            <h2>Testimoni Pelanggan</h2>
+            <p style="color: #666; margin-bottom: 30px;">Dengarkan dari pelanggan setia kami yang puas dengan produk dan layanan Gunpla Universe</p>
+            <div class="testimonials-container">
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">🚀</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmad Rizki</h4>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Kualitas produk sangat bagus dan sesuai dengan deskripsi. Pengiriman cepat dan packaging rapi. Pasti bakal beli lagi di sini!"</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">🎨</div>
+                        <div class="testimonial-info">
+                            <h4>Siti Nurhaliza</h4>
+                            <p>Bandung, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Pelayanan customer service yang sangat responsif. Harga terjangkau dan ada diskon menarik. Rekomendasi untuk semua penggemar Gundam!"</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">🎯</div>
+                        <div class="testimonial-info">
+                            <h4>Budi Santoso</h4>
+                            <p>Surabaya, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Produk original dan lengkap. Saya sudah beli berkali-kali dan tidak pernah kecewa. Toko ini adalah pilihan terbaik untuk Gunpla!"</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">🏆</div>
+                        <div class="testimonial-info">
+                            <h4>Dewi Lestari</h4>
+                            <p>Medan, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Koleksi lengkap dan harga kompetitif. Packaging aman sehingga produk sampai dengan sempurna. Terima kasih Gunpla Universe!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOPPING CART SIDEBAR -->
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-header-sidebar">
+                <h2>🛒 Keranjang Belanja</h2>
+                <button class="close-cart-btn" onclick="toggleCart()">✕</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p style="text-align: center; color: #999; padding: 20px;">Keranjang Anda masih kosong</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total:</strong>
+                    <span id="cart-total">Rp 0</span>
+                </div>
+                <button class="checkout-btn" onclick="checkoutCart()">Lanjut ke WhatsApp</button>
+                <button class="clear-cart-btn" onclick="clearCart()">Kosongkan Keranjang</button>
+            </div>
+        </div>
+
+        <!-- LIVE CHAT WIDGET -->
+        <div class="chat-widget">
+            <button class="chat-btn" onclick="toggleChat()">
+                💬 Chat dengan Kami
+            </button>
+            <div id="chat-popup" class="chat-popup">
+                <div class="chat-header">
+                    <h3>Gunpla Universe Support</h3>
+                    <button class="close-chat-btn" onclick="toggleChat()">✕</button>
+                </div>
+                <div class="chat-body">
+                    <p style="margin-bottom: 15px;"><strong>Halo! 👋</strong></p>
+                    <p>Terima kasih telah mengunjungi Gunpla Universe!</p>
+                    <p>Ada yang bisa kami bantu? Hubungi kami via:</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 10px;">
+                        <li style="margin-bottom: 8px;">
+                            <a href="https://wa.me/628++++++++++" target="_blank" style="display: inline-block; background-color: #25d366; color: white; padding: 8px 12px; border-radius: 4px; text-decoration: none;">
+                                📱 WhatsApp
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 8px;">
+                            <button onclick="toggleReceiptFinder()" style="display: inline-block; background-color: #0084ff; color: white; padding: 8px 12px; border-radius: 4px; border: none; cursor: pointer;">
+                                🧾 Cari Bukti Pembelian
+                            </button>
+                        </li>
+                        <li>
+                            <p style="font-size: 0.9rem; color: #666;">Jam Operasional: Senin-Minggu 09:00-21:00 WIB</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECEIPT FINDER MODAL -->
+        <div id="receipt-finder-modal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 999;">
+            <div style="background-color: white; margin: 50px auto; padding: 30px; border-radius: 10px; width: 90%; max-width: 500px;">
+                <h2>🧾 Cari Bukti Pembelian</h2>
+                <p style="color: #666;">Masukkan ID Pesanan Anda untuk melihat bukti pembelian.</p>
+                <input type="text" id="receipt-search-id" placeholder="Contoh: GU-1708089600000" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px;">
+                <button onclick="findReceipt()" style="background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-weight: bold;">🔍 Cari</button>
+                <button onclick="toggleReceiptFinder()" style="background-color: #ddd; color: #333; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-weight: bold; margin-top: 10px;">Batal</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <section id="benefits" class="benefits" style="margin-top: 250px;">
+            <h2>Keuntungan Beli di Gunpla Universe</h2>
+            <div class="benefits-container">
+                <div class="benefits-content">
+                    <ol>
+                        <li><strong>Garansi Keaslian Produk:</strong> Semua model kit yang kami jual adalah produk asli dengan kualitas terjamin.</li>
+                        <li><strong>Harga Kompetitif:</strong> Kami menawarkan harga yang bersaing dengan toko lain.</li>
+                        <li><strong>Pelayanan Pelanggan:</strong> Tim kami siap membantu dan memberikan informasi yang Anda butuhkan.</li>
+                        <li><strong>Pengiriman Cepat:</strong> Kami bekerja sama dengan jasa pengiriman terbaik untuk memastikan barang cepat sampai di tangan Anda.</li>
+                        <li><strong>Diskon dan Promo Khusus:</strong> Dapatkan penawaran menarik dengan diskon dan promo khusus di berbagai kesempatan.</li>
+                        <li><strong>Jaminan Kepuasan:</strong> Jika Anda tidak puas dengan produk yang diterima, kami siap membantu dengan solusi terbaik.</li>
+                    </ol>
+                </div>
+                <div class="benefits-image">
+                    <img src="images/benefits.jpg" alt="Keuntungan Beli di Gunpla Universe">
+                </div>
+            </div>
+        </section> 
+            <section id="contact" class="contact">
+                <h2>Kontak Kami</h2>
+                <div class="contact-content">
+                    <img src="images/logo.png" alt="Gunpla Universe Logo" class="contact-logo">
+                    <p>Untuk informasi lebih lanjut, silakan hubungi kami melalui WhatsApp di nomor: 
+                        <a href="https://wa.me/628++++++++++">+628++++++++</a>
+                    </p>
+                </div>
+            </section>
+            <section id="social-media" class="social-media">
+                <h2>Ikuti Kami di Media Sosial</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/BandaiNamcoPlay/" target="_blank">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://x.com/bandaicollect/" target="_blank">
+                        <img src="images/x.png" alt="x">
+                    </a>
+                    <a href="https://www.instagram.com/bandaicollect/" target="_blank">
+                        <img src="images/IG.jpg" alt="Instagram">
+                    </a>
+                </div>
+            </section>                       
+            <section id="faq" class="faq">
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>Apakah semua produk yang dijual di Gunpla Universe asli?</h3>
+                    <p>Ya, kami hanya menjual produk-produk asli yang berkualitas tinggi.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Bagaimana cara memesan produk di Gunpla Universe?</h3>
+                    <p>Anda dapat memesan produk melalui WhatsApp di nomor: 
+                        <a href="https://wa.me/628++++++++++">+628++++++++</a>
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Apakah Gunpla Universe melayani pengiriman internasional?</h3>
+                    <p>Ya, kami melayani pengiriman ke berbagai negara di seluruh dunia.</p>
+                </div>
+            </section>            
+            <section id="privacy-policy" class="privacy-policy">
+                <h2>Kebijakan Privasi</h2>
+                <p>Kami menghargai privasi Anda dan berkomitmen untuk melindungi informasi pribadi Anda. Informasi yang Anda berikan hanya akan digunakan untuk keperluan transaksi dan layanan pelanggan. Kami tidak akan membagikan informasi Anda kepada pihak ketiga tanpa izin Anda.</p>
+            </section>            
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gunpla Universe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
